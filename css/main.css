@@ -57,7 +57,9 @@ nav ul li a{
 	color:#CC3333;
 	margin-top:20rem;
 	position:fixed;
-	
+  -ms-transform: rotate(90.0deg); /* IE9+ */
+  -o-transform: rotate(90.0deg); /* Opera 10.5 */
+  -webkit-transform: rotate(90.0deg); /* Safari 3.1+*/
 }
 
 
@@ -107,12 +109,11 @@ nav ul li a{
 /* ////////////////////////////////////////////////////////////////////////////////HOVER Tester */
 .hover{
 	position:absolute;
+
 }
-img:hover{
-  filter: grayscale(70%);
-}
+
 #rollo-tag:hover{
-	filter: grayscale(70%);
+	filter: grayscale(0.6);
 
 }
 
@@ -133,8 +134,12 @@ visibility:visible;
 }
 
 .wrapper:hover img {
-filter: grayscale(70%);
+filter: grayscale(0.6);
 
+}
+a:hover{
+	filter:grayscale(.6);
+	-webkit-filter: grayscale(.6)
 }
 
 
